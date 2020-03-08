@@ -1,8 +1,15 @@
 "use strict";
 console.log('dfjkghfjkdg');
-function getValue() {
+var getvalue = function () {
     return 10;
-}
-var a = getValue();
-console.log('yo', a);
+};
+console.log('yo', getvalue());
+var getArrowValue = function (m) { return 30 * m; };
+console.log(getArrowValue(3));
+var getArith = function (a, b) {
+    return a * b;
+};
+console.log('add=', getArith(4, 3));
+var getEsArith = function (a, b) { return a * b; };
+console.log('es mul = ', getEsArith(3, 5));
 //# sourceMappingURL=t1.js.map
