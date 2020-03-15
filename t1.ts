@@ -22,7 +22,6 @@ const getEsArith = ( a:number, b:number) => a*b;
 
 console.log('es mul = ', getEsArith(3,5));
 
-<<<<<<< HEAD
 let count = function(){
     let x = 1;
     return function(){
@@ -34,7 +33,7 @@ let myCounter = count();
 
 console.log(myCounter());
 console.log(myCounter());
-=======
+
 console.log("Lexical This");
 
 var emp = {
@@ -86,5 +85,4 @@ for( let i in animes ) {
 for( let anime of animes ) {
     console.log( anime );
 }
- 
->>>>>>> 835f767672bd131e0981924f9cd07c0866ce9f1b
+
