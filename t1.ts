@@ -21,3 +21,15 @@ console.log('add=', getArith(4,3));
 const getEsArith = ( a:number, b:number) => a*b;
 
 console.log('es mul = ', getEsArith(3,5));
+
+let count = function(){
+    let x = 1;
+    return function(){
+        return x++;
+    }
+}
+
+let myCounter = count();
+
+console.log(myCounter());
+console.log(myCounter());
