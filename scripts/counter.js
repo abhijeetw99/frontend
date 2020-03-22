@@ -1,6 +1,6 @@
 "use strict";
-var counter = function () {
-    var privateCounter = 0;
+let counter = function () {
+    let privateCounter = 0;
     function change(x) {
         privateCounter += x;
     }
@@ -13,10 +13,10 @@ var counter = function () {
             change(-x);
             this.value();
         },
-        value: function () { return console.log(privateCounter); }
+        value: () => console.log(privateCounter)
     };
 };
-var myCounter = counter();
+let myCounter = counter();
 console.log(typeof (counter));
 console.log(myCounter.value());
 console.log(myCounter.increment(2));
